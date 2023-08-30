@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label><input type="text" id="fname" onfocus="focusfunction(this)" onblur="blurfunction(this)" oninput="inputfunction(this)" onchange="changefunction(this)" onselect="selectfunction()"><br><br>
+        <label for="">Class</label><input type="text" id="" onfocus="focusfunction(this)" onblur="blurfunction(this)" ><br><br>
+
+        <label for="">Country</label>
+        <select  id="" onfocus="focusfunction(this)" onblur="blurfunction(this)" onchange="changefunction(this)">
+            <option value="india ">India</option>
+            <option value="pakistan">pakistan</option>
+            <option value="srilanka">srilanka</option>
+            <option value="afghanistaj">afghanistaj</option>
+            <option value="bangladesh">bangladesh</option>
+            <option value="other">other</option>
+        </select>
+    </form>
+
+    <div id="test" style="border: 1px solid red;"></div>
+    <script>
+        function focusfunction(element){
+           element.style.background = "red"
+        }
+        function blurfunction(element){
+           element.style.background = ""
+        }
+        function inputfunction(element){
+           var x =element.value;
+           document.getElementById("test").innerHTML=x;
+        }
+
+        function changefunction(element){
+            var x = element.value;
+            document.getElementById("test").innerHTML=x;
+        }
+        function selectfunction(element){
+            console.log("yor are select")
+        }
+           
+
+    </script>
+</body>
+</html>

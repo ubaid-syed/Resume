@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            border:1px solid red;
+            background: pink;
+            margin: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="box"></div>-->
+    <input type="text" id="mytest">
+   
+    
+    <script>
+        var target = document.querySelector("#mytest");
+        target.addEventListener('keydown', function(e){
+            console.clear();
+
+           var k;
+
+           switch (true) {
+            case e.metaKey:
+               k = "Meta Key";
+               break;
+               case e.altKey:
+               k = "alt Key";
+               break;
+               case e.ctrlKey:
+               k = "ctrl Key";
+               break;
+               case e.shiftKey:
+               k = "shift Key";
+               break;
+               default:
+               k = "NO key Pressed";
+               break;
+           }
+
+
+           /* var ctrl = e.ctrlKey;
+            if(ctrl){
+                  console.log('you pressed ctrl key')
+            }else{
+                console.log('you not pressed ctrl key')
+            }
+
+            var shift = e.shiftKey;
+            if(shift){
+                  console.log('you pressed ctrl key')
+            }else{
+                console.log('you not pressed ctrl key')
+            }
+
+            var alt = e.altKey;
+            if(alt){
+                  console.log('you pressed ctrl key')
+            }else{
+                console.log('you not pressed ctrl key')
+            }
+        
+
+    var meta = e.metaKey;
+            if(meta){
+                  console.log('you pressed ctrl key')
+            }else{
+                console.log('you not pressed ctrl key')
+            }
+         */    
+           
+        })
+        //shorcut key
+        /* 25 and 26 
+            var x = e.x;
+            var y = e.y;
+            you can write like this
+        */
+    </script>
+</body>
+</html>

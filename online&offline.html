@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #box{
+        background: rgb(221, 221, 95);
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        border: 5px solid #4e4e4e;
+       }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+          var target = document.querySelector("#box");
+          window.addEventListener('offline',function(){
+            target.innerHTML = "you are offline.";
+            target.style.backgroundColor = "pink";
+          });
+
+          window.addEventListener('online',function(){
+            target.innerHTML = "you are online.";
+            target.style.backgroundColor = "red";
+          });
+    </script>
+</body>
+</html>

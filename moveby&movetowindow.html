@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="moveWindow()">move window</button>
+
+    <script>
+     function openWindow(){
+       mywindow = window.open("http://www.shahgee.net","","width=500px,height=200px,left=100px,top=200px");
+     }
+     function moveWindow(){
+          mywindow.moveTo(100,100);
+          mywindow.focus();
+     }
+    </script>
+</body>
+</html>

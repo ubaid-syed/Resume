@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            border:1px solid red;
+            background: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+   
+    
+    <script>
+      
+       document.addEventListener('click', function(e){
+            var x = e.screenX;
+            var y = e.screenY;
+            console.clear();
+            console.log("screenX :" + x);
+            console.log("screenY :" + y);
+        
+        })
+        //shorcut key
+        /* 25 and 26 
+            var x = e.x;
+            var y = e.y;
+            you can write like this
+        */
+    </script>
+</body>
+</html>

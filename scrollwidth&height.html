@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                body{
+            font-family: arial;
+        }
+        #box{
+            background: pink;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    
+    
+
+    <script>
+       const target= document.querySelector("#box");
+
+       var scroll_Width = target.scroll_Width;
+       var scroll_Height = target.scroll_Height;
+       console.log("scroll width : " + scroll_Width);
+       console.log("scroll Height : " + scroll_Height);
+    </script>
+</body>
+</html>

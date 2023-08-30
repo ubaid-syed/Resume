@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #box{
+            background: pink;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            border: 1px solid #000;
+        }
+        #inner-box{
+            background: lightgreen;
+            width: 1000px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inner-box"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum ipsa ullam dolorum sit quo maxime minus nisi quis exercitationem vitae nihil optio tempore dolor ad tempora fugit consequatur modi aspernatur dolore, unde, iure recusandae? Placeat beatae ea laudantium hic quisquam et ipsam nemo fuga, ad, delectus unde illum excepturi rem ipsa incidunt repellendus atque deserunt ut veritatis sit totam! Deleniti harum aut, debitis cum unde velit. Inventore aspernatur, voluptas, temporibus ex repudiandae vel qui iusto eveniet sint ratione voluptatibus adipisci dolor quidem culpa quasi a accusamus expedita eius natus labore tempore consequuntur earum? Odit laborum officiis, debitis incidunt deserunt explicabo error modi est ipsa cupiditate omnis at sed amet nam in ratione accusamus temporibus quasi perferendis harum nostrum enim iure dolorem? Inventore delectus laboriosam quod esse quisquam cupiditate ipsam quaerat reprehenderit. Nam quia, ipsam nesciunt quibusdam, reiciendis ipsum molestias delectus nisi obcaecati cum vero optio! Animi, laboriosam excepturi nostrum ipsam praesentium aperiam veritatis accusamus? Tempore at aut nesciunt quasi esse pariatur fugit iusto, soluta amet repellendus quas atque voluptate itaque deleniti ad autem rem repellat, dolor earum dicta iure illum aspernatur. Repellendus ullam corrupti, fuga adipisci excepturi quam, velit nihil, fugiat facilis aspernatur dignissimos totam. Quidem ad est debitis magni libero sit ab quisquam. Explicabo quisquam tenetur veniam maiores nostrum natus nesciunt, saepe expedita ad voluptate! Temporibus inventore quibusdam repudiandae enim et provident necessitatibus eligendi ducimus, ipsam molestiae sapiente neque aut, delectus autem iste eaque possimus velit accusantium officia maxime praesentium ipsum assumenda eum. Eveniet, iusto fuga. Eos doloribus minima dolorum commodi at itaque, expedita architecto! Tempora sed ipsam quidem doloribus laborum perspiciatis commodi accusantium, cupiditate laudantium blanditiis corrupti earum molestias necessitatibus? Tempora asperiores, assumenda vero officiis doloribus quisquam magni ad perspiciatis voluptatum obcaecati. Commodi aliquam aut numquam est beatae suscipit sint vitae, hic dolorem? Velit commodi, non facilis aliquam omnis officia pariatur, voluptates suscipit ipsum earum ad? Sapiente magnam praesentium dolor, error ad delectus mollitia amet non doloribus ex voluptatibus, voluptate qui commodi deleniti libero veniam, ratione quod et dignissimos minima! Facere blanditiis hic, ex incidunt deserunt asperiores? Molestiae eaque error quas at praesentium consequuntur pariatur! Fuga ipsam architecto repudiandae aliquid quod officia, cupiditate beatae, provident nam voluptates voluptate suscipit nulla neque reprehenderit non sequi debitis corporis facilis consequatur ut! Quam unde voluptates alias vero, distinctio aliquam. Aspernatur doloribus doloremque nihil ipsam reprehenderit dolorem, asperiores illum totam officiis, harum illo placeat cumque quaerat delectus consequuntur aliquam alias rerum aliquid. Reprehenderit vel explicabo expedita dolorum. Ducimus minus inventore dolorem, optio dolores, fugiat nostrum labore natus at, perferendis itaque fugit consequatur assumenda similique ad ab totam ea et possimus. Vero, quidem nesciunt repellat fugiat praesentium amet labore debitis tenetur accusantium commodi, natus ducimus vitae? Velit impedit neque asperiores nam maxime dolore? Nulla minus repudiandae dignissimos sit architecto ducimus libero laudantium, quibusdam, nam laborum rem deserunt animi voluptate porro labore tempora necessitatibus neque eveniet cumque dicta eum? Dolorem obcaecati repellendus alias nobis assumenda mollitia nulla quaerat adipisci iste, aspernatur eos hic natus placeat ratione pariatur sunt ut distinctio accusantium numquam corporis.</div>
+
+  <script>
+    const target = document.querySelector("#box");
+    target.addEventListener('scroll',() => {
+        console.clear();
+        console.log("scrollTop : " + target.scrollTop);
+        console.log("scrollLeft : " + target.scrollLeft);
+      });
+
+  </script>
+</body>
+</html>
